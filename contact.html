@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="/imagens/pegaavisao.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contato</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            margin: 0; /* Remove margin padrão */
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 90%; /* Largura responsiva */
+            max-width: 400px; /* Largura máxima */
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        label {
+            display: block;
+            margin: 5px 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 3px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            transition: 0.3s;
+        }
+        input:focus {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        button {
+            background: #ff9800;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e68900;
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media Queries para Responsividade */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px; /* Reduz o padding em telas menores */
+            }
+            button {
+                width: 100%; /* Botão ocupa toda a largura em telas pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <p>Por favor, deixe seu feedback ou alguma duvida sobre a utilização do nosso site!</p>
+        <form class="contact-form" action="https://formsubmit.co/jobgotalent@gmail.com" method="POST" onsubmit="showAlert(event)">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Mensagem</label>
+            <input type="text" name="message" id="message" required>
+            <br>
+            <br>
+            <button type="submit">enviar</button>
+        </form>
+    </div>
+
+    <script>
+        function showAlert(event) {
+            event.preventDefault(); // Impede o envio do formulário para mostrar o alerta
+            alert("Obrigado por entrar em contato");
+            // Após o alerta
+            event.target.submit(); // Envia o formulário
+        }
+    </script>
+</body>
+</html>

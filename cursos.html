@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos Online</title>
+    <link rel="shortcut icon" href="/imagens/pegaavisao.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+        }
+        .cursos {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .curso {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            flex: 1 1 300px;
+            max-width: 400px;
+            transition: transform 0.3s;
+        }
+        .curso:hover {
+            transform: scale(1.05);
+        }
+        .free {
+            border-left: 5px solid #28a745;
+        }
+        .paid {
+            border-left: 5px solid #dc3545;
+        }
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 600px) {
+            .cursos {
+                flex-direction: column;
+                align-items: center;
+            }
+            .curso {
+                width: 90%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cursos que indicamos</h1>
+    </header>
+    <main>
+        <section class="cursos">
+            <h2>Cursos Gratuitos</h2>
+
+            <div class="curso free">
+                <h3>Excel Básico ao Avançado</h3>
+                <p>Plataforma: Prime cursos.</p>
+                <a href="https://www.primecursos.com.br/excel-do-basico-ao-avancado-vba/"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>Marketing Digital</h3>
+                <p>Plataforma: Coursera.</p>
+                <a href="https://www.coursera.org/learn/estrategia-marketing-digital"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>Técnico em TI</h3>
+                <p>Plataforma: Senai-sp.</p>
+                <a href="https://www.sp.senai.br/cursos/cursos-livres/tecnologia-da-informacao-e-informatica"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>Saúde Mental</h3>
+                <p>Plataforma: Abba Cursos.</p>
+                <a href="https://www.abbacursos.com.br/curso-de-saude-mental-a-evolucao-dos-tratamentos-psquiatricos"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>Desenvolvimento Full-stack(projeto transfero)</h3>
+                <p>Plataforma: Senac-rj.</p>
+                <a href="https://www.rj.senac.br/"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>Ciencia de Dados</h3>
+                <p>Plataforma: Cursa-app.</p>
+                <a href="https://cursa.app/pt/curso-gratuito/ciencia-de-dados-didc"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>Gestão de Finanças Pessoais (Poupar e Investir)</h3>
+                <p>Plataforma: Banco central do brasil</p>
+                <a href="https://www.bcb.gov.br/cidadaniafinanceira/poupar_investir"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3> Curso de Inglês</h3>
+                <p>Plataforma: Alison Empower Yourself</p>
+                <a href="https://alison.com/tag/english-language"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3> Técnico em TI</h3>
+                <p>Plataforma: Up Cursos</p>
+                <a href="https://upcursosgratis.com.br/curso-online-gratis/ti-tecnologia-da-informacao"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>  Segurança Cibernética</h3>
+                <p>Plataforma: Escola Virtual.gov</p>
+                <a href="https://www.escolavirtual.gov.br/curso/1132"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>  Assistencia Social</h3>
+                <p>Plataforma: Cursos Educa Web</p>
+                <a href="https://cursoseducaweb.com.br/cursos/assistencia-social"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>  Analise de Dados da Microsoft</h3>
+                <p>Plataforma: Eu Capacito</p>
+                <a href="https://www.eucapacito.com.br/cursos/cintroducao-a-analise-de-dados-da-microsoft/"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>  Programação em Java</h3>
+                <p>Plataforma: Eu Capacito</p>
+                <a href="https://www.eucapacito.com.br/cursos/venha-programar-em-java/"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>  Linux Fundamentos</h3>
+                <p>Plataforma: Eu Capacito</p>
+                <a href="https://www.eucapacito.com.br/cursos/linux-fundamentos/"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso free">
+                <h3>  Resolucao de Problemas Técnicos</h3>
+                <p>Plataforma: Eu Capacito</p>
+                <a href="https://www.eucapacito.com.br/cursos/resolucao-de-problemas-tecnicos/"><button class="btn">Acessar</button></a>
+            </div>
+        </section>
+        <section class="cursos">
+            <h2>Cursos Pagos</h2>
+            <div class="curso paid">
+                <h3>Técnico em TI</h3>
+                <p>Plataforma: Estácio.</p>
+                <a href="https://estacio.br/cursos/graduacao/gestao-da-tecnologia-da-informacao"><button class="btn">Saiba Mais</button></a>
+            </div>
+            <div class="curso paid">
+                <h3>Curso de Espanhol</h3>
+                <p>Plataforma: Funiber.</p>
+                <a href="https://www.funiber.org.br/cursos-de-espanhol"><button class="btn">Saiba Mais</button></a>
+            </div>
+            <div class="curso paid">
+                <h3>Desenvolvimento Full-stack</h3>
+                <p>Plataforma: Senac-rj.</p>
+                <a href="https://www.rj.senac.br/"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso paid">
+                <h3> Cuidador de Idosos</h3>
+                <p>Plataforma: Cursos 24Horas</p>
+                <a href="https://www.cursos24horas.com.br/cursos/cuidador-de-idosos/"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso paid">
+                <h3> Engenharia Civil</h3>
+                <p>Plataforma: Escola Politécnica</p>
+                <a href="https://www.eng.ufba.br/curso-graduacao/engenharia-civil"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso paid">
+                <h3> Técnico em Enfermagem</h3>
+                <p>Plataforma: Ensino Einstein</p>
+                <a href="https://ensino.einstein.br/curso_tecnico_em_enfermagem_p0444/p"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso paid">
+                <h3> Introdução a Administração</h3>
+                <p>Plataforma: Fundação Bradesco</p>
+                <a href="https://www.ev.org.br/cursos/introducao-a-administracao"><button class="btn">Acessar</button></a>
+            </div>
+            <div class="curso paid">
+                <h3> Programação em Python (Básico ao Avançado)</h3>
+                <p>Plataforma: Udemy</p>
+                <a href="https://www.udemy.com/course/curso-de-programacao-em-python-do-basico-ao-avancado/?couponCode=2021PM25"><button class="btn">Acessar</button></a>
+            </div>
+            
+           
+        </section>
+    </main>
+</body>
+</html>

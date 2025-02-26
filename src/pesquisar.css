@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color:black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+#searchBar {
+    padding: 10px;
+    width: 60%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+main {
+    padding: 30px 0;
+}
+
+#job-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.job-item {
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Move para baixo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animação */
+}
+
+.job-item.show {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Retorna à posição original */
+}
+
+.job-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.job-item p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.apply-btn {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
